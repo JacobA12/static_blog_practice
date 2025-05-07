@@ -1,8 +1,71 @@
 :root {
   --background-color: #232830;
-  --primary-color: #FFFFFF;
+  --primary-color: #ffffff;
+  --secondary-color: #ff7575;
+  --third-color: #909090;
   --title-font-size: 71px;
   --subtitle-font-size: 30px;
   --base-font-size: 24px;
   --body-font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* More intuitive box model */
+}
+
+body {
+  font-family: "Poppins", sans-serif; /* Added fallback font */
+  background-color: var(--background-color);
+  padding: 0;
+  margin: 0;
+}
+
+/* header content */
+.header {
+  color: var(--primary-color);
+  font-size: var(--base-font-size);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* main title under header */
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.blog-title {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: var(--title-font-size);
+  font-family: "Recursive";
+  font-style: italic;
+}
+
+.slogan {
+  color: var(--primary-color);
+  font-size: var(--subtitle-font-size);
+  font-weight: 400;
 }
