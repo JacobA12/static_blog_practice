@@ -206,3 +206,50 @@ body {
   color: #ff7575;
   font-style: bold;
 }
+
+/* footer */
+.footer {
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.left-footer {
+  display: flex;
+  gap: 15px;
+}
+
+.right-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#github-handle,
+#handle {
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 19px;
+  text-align: center;
+  padding: 4px 15px; /* Reduced vertical padding */
+  margin: auto 0;
+  background-color: #4699e0;
+  border-radius: 6px;
+  width: fit-content;
+  height: 30px; /* Set fixed height for both */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* Add this to control text height */
+}
+
+#github-handle {
+  gap: 8px; /* Keep gap only for github handle since it has the icon */
+}
