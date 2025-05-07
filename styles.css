@@ -179,3 +179,30 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* pagination */
+
+.pagination {
+  font-family: Recursive;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #909090;
+
+  margin: 50px auto;
+  padding: 0;
+  width: 100%;
+
+  justify-content: center;
+
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+#selected {
+  color: #ff7575;
+  font-style: bold;
+}
