@@ -22,6 +22,12 @@ body {
   margin: 0;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* header content */
 .header {
   color: var(--primary-color);
@@ -83,6 +89,7 @@ body {
   font-size: 27px;
   line-height: 100%;
   letter-spacing: 0%;
+  justify-self: center;
 
   max-width: 900px;
   margin-left: auto;
@@ -107,4 +114,68 @@ body {
 .icons {
   display: flex;
   gap: 10px;
+}
+
+/* blog cards */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.card-structure {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 10px; /* Reduced from 15px */
+  padding: 15px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0f1217;
+  margin: 0; /* Add this to remove default margin */
+}
+
+.card-body-text {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0f1217;
+  margin: 0; /* Add this to remove default margin */
+}
+
+.card-footer {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0f1217;
+
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
